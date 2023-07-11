@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    padding: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    background-color: rgba(223, 227, 230, 0.8);
+    /* Semi-transparent background */
+    color: #000000;
+    position: relative;
+    margin-top: 50px;
+    overflow-y: auto;
+    /* Add scroll bar if content overflows */
+    height: 80vh;
+    /* You may need to adjust this based on your content */
+}
+
+
+/* Scrollbar Styles */
+
+.container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #2faaf1;
+}
+
+h1,
+h2 {
+    color: #0579fd;
+}
+
+p,
+ul li {
+    color: #000000;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+ul li i {
+    margin-right: 15px;
+    color: #00a0e4;
+}
+
+ul li a.highlight {
+    color: #0579fd;
+    text-decoration: none;
+}
+
+ul li a.highlight:hover {
+    color: #00b4f0;
+    text-decoration: underline;
+}
+
+#social-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#social-links a.github:hover {
+    color: #181717;
+}
+
+#social-links a.linkedin:hover {
+    color: #0a66c2;
+}
+
+#social-links a.discord:hover {
+    color: #5865f2;
+}
+
+#social-links a.twitter:hover {
+    color: #1da1f2;
+}
+
+#social-links a.facebook:hover {
+    color: #1877f2;
+}
+
+p a {
+    color: #181616;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: #00b4f0;
+}
+
+.rocket {
+    position: absolute;
+    color: white;
+    animation: fly 5s linear infinite;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    animation: moveStars 5s linear infinite;
+}
+
+
+/* Responsive media query for smaller screens (mobile view) */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
